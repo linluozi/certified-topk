@@ -1,0 +1,50 @@
+{
+  "stream": {
+    "n": 1000000,
+    "alpha": 1.1,
+    "universe_cap": 20000000,
+    "hot": 10000,
+    "seed": 20261102
+  },
+  "capacity": 4096,
+  "k": 20,
+  "reps": 5,
+  "ingest_seconds": {
+    "sketch_median": 1.1831872947514057,
+    "sketch_min": 1.1593294451013207,
+    "counter_median": 0.08925458369776607,
+    "counter_min": 0.0853780428878963
+  },
+  "throughput_items_per_s": {
+    "sketch": 845174.7279876814,
+    "counter": 11203906.382961806
+  },
+  "peak_mb": {
+    "sketch": 2.9737815856933594,
+    "counter": 30.00128936767578
+  },
+  "distinct": 592588,
+  "certificate_rate_by_alpha": {
+    "0.6": {
+      "certified": true,
+      "kth_lower": 378,
+      "bound": 326
+    },
+    "1.1": {
+      "certified": true,
+      "kth_lower": 159,
+      "bound": 141
+    },
+    "1.8": {
+      "certified": false,
+      "kth_lower": 33,
+      "bound": 38
+    }
+  },
+  "soundness_sweep": {
+    "streams": 5000,
+    "certified": 526,
+    "false_certificates": 0
+  },
+  "interval_bounds_ok_on_big_stream": true
+}
